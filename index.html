@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Web Studio</title>
@@ -19,7 +25,7 @@
     <header class="header">
       <div class="container container--header">
         <h3>
-          <a class="logo logo--top" href=""
+          <a class="logo logo--top" href="./index.html"
             >Web<span class="logo__header-text">Studio</span></a
           >
         </h3>
@@ -38,18 +44,14 @@
               <a
                 class="nav__link"
                 href="https://martadomzalska.github.io/goit-markup-hw-08/"
-                >Agencja</a
+                >Agency</a
               >
             </li>
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="https://martadomzalska.github.io/goit-markup-hw-08/portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav__link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="Kontakt">Kontakt</a>
+              <a class="nav__link" href="Kontakt">Contact</a>
             </li>
           </ul>
         </nav>
@@ -76,12 +78,9 @@
     <main>
       <section>
         <div class="container container--page-header">
-          <h1 class="page-headline">
-            EFEKTYWNE ROZWIĄZANIA<br />
-            DLA WASZEGO BIZNESU
-          </h1>
+          <h1 class="page-headline">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
           <button class="page-headline__button" type="button" data-modal-open>
-            Zamów usługę
+            Order Service
           </button>
         </div>
       </section>
@@ -141,46 +140,46 @@
       </section>
       <section>
         <div class="container">
-          <h2 class="work-headline">Czym się zajmujemy</h2>
+          <h2 class="work-headline">What we do</h2>
           <ul class="work-list">
             <li class="work-list__element">
               <img
-                src="./images/hands.jpg"
+                src="./images/desktop.jpg"
                 alt="close up to a programer working at his desk office"
                 width="370"
                 height="294"
               />
               <div class="work-list__box">
-                <h4 class="work-list__text">Aplikacje komputerowe</h4>
+                <h4 class="work-list__text">Desktop Applications</h4>
               </div>
             </li>
             <li class="work-list__element">
               <img
-                src="./images/phone.jpg"
+                src="./images/mobile.jpg"
                 alt="web ui designer is working on mobile phone"
                 width="370"
                 height="294"
               />
               <div class="work-list__box">
-                <h4 class="work-list__text">Aplikacje mobilne</h4>
+                <h4 class="work-list__text">Mobile Applications</h4>
               </div>
             </li>
             <li class="work-list__element">
               <img
-                src="./images/tablet.jpg"
+                src="./images/graphic.jpg"
                 alt="web design with working colour selection on graphic tablet"
                 width="370"
                 height="294"
               />
               <div class="work-list__box">
-                <h4 class="work-list__text">Rozwiązania graficzne</h4>
+                <h4 class="work-list__text">Graphic Solutions</h4>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="about-background">
-        <h2 class="about-background__headline">Nasz zespół</h2>
+        <h2 class="about-background__headline">Our Team</h2>
         <div class="container container--about">
           <ul class="about-background__list">
             <li class="about-background__list-item">
@@ -404,7 +403,7 @@
         </div>
       </section>
       <section>
-        <h2 class="clients-headline">Nasi klienci</h2>
+        <h2 class="clients-headline">Our clients</h2>
         <div class="container container--clients">
           <ul class="clients-headline__list">
             <li class="clients-headline__list-item">
@@ -444,7 +443,7 @@
     <footer class="footer-background">
       <div class="container container--lists">
         <section class="logo-section">
-          <a href="https://webstudio.pl" class="logo"
+          <a href="./index.html" class="logo"
             >Web <span class="logo__footer-text">Studio</span></a
           >
           <div class="brand-info">
@@ -463,7 +462,7 @@
         </section>
 
         <section class="join-us">
-          <h3 class="join-us__headline">Dołącz do nas</h3>
+          <h3 class="join-us__headline">Join us</h3>
           <ul class="join-us__list">
             <li class="join-us__item">
               <svg class="join-us__icon" width="20" height="20">
@@ -489,7 +488,7 @@
         </section>
 
         <section class="newsletter">
-          <h3 class="newsletter__headline">Zapisz się do newslettera</h3>
+          <h3 class="newsletter__headline">Subscribe to the Newsletter</h3>
           <form
             class="newsletter__form"
             name="newsletter_form"
@@ -505,7 +504,7 @@
               />
             </label>
             <button class="newsletter__button" type="submit">
-              Zapisz się
+              Subscribe
               <svg class="newsletter__button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
@@ -522,11 +521,11 @@
         </button>
         <div class="modal-form-section">
           <h2 class="modal-form-section__headline">
-            Zostaw swoje dane w formularzu poniżej
+            Leave your details in the form below
           </h2>
           <form name="modal-form" autocomplete="on">
             <label class="modal-form-section__label">
-              <span class="modal-form-section__label-text">Imie</span>
+              <span class="modal-form-section__label-text">Name</span>
               <input
                 type="text"
                 class="modal-form-section__input"
@@ -539,7 +538,7 @@
             </label>
 
             <label class="modal-form-section__label">
-              <span class="modal-form-section__label-text">Telefon</span>
+              <span class="modal-form-section__label-text">Phone</span>
               <input
                 type="tel"
                 class="modal-form-section__input"
@@ -563,11 +562,11 @@
               </svg>
             </label>
             <label class="modal-form-section__label">
-              <span class="modal-form-section__label-comments">Komentarz</span>
+              <span class="modal-form-section__label-comments">Comment</span>
               <textarea
                 class="modal-form-section__comments"
                 name="comments"
-                placeholder="Wprowadź tekst"
+                placeholder="Enter your message"
               ></textarea>
             </label>
 
@@ -578,11 +577,11 @@
               name="policy"
             />
             <label for="user-policy" class="policy__text"
-              >Oświadczam iż akceptuję
-              <a class="policy__link" href="">Regulamin</a> i
-              <a class="policy__link" href="">Politykę Prywatności</a>.</label
+              >I declare that I accept the
+              <a class="policy__link" href="">Terms of Service</a> and
+              <a class="policy__link" href="">Privacy Policy</a>.</label
             >
-            <button class="policy__button" type="submit">Wyślij</button>
+            <button class="policy__button" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -602,7 +601,7 @@
             class="menu-container__link menu-container__link--active"
             href="https://martadomzalska.github.io/goit-markup-hw-08"
           >
-            Agencja</a
+            Agency</a
           >
         </li>
         <li class="menu-container__list-item">
@@ -612,7 +611,7 @@
             >Portfolio</a
           >
         </li>
-        <li class="menu-container__link">Kontakt</li>
+        <li class="menu-container__link">Contact</li>
       </ul>
       <section class="menu-container__contact">
         <a href="tel:+48111111111" class="menu-container__contact-tel"

@@ -10,18 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
   </head>
   <body class="body">
     <header class="header">
       <div class="container container--header">
         <h3>
-          <a
-            href="https://martadomzalska.github.io/goit-markup-hw-08/"
-            class="logo logo--top"
+          <a href="./index.html" class="logo logo--top"
             ><span class="logo__header-text">Web</span>Studio</a
           >
         </h3>
@@ -30,7 +33,11 @@
             <use href="./images/menu_24px.svg#icon/menu_24px"></use>
           </svg>
         </button>-->
-         <button type="button" class="menu-toggle js-open-menu"aria-controls="mobile-menu">
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-controls="mobile-menu"
+        >
           <svg width="24" height="16">
             <use href="./images/menu_24px.svg#icon/menu_24px"></use>
           </svg>
@@ -38,21 +45,13 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="https://martadomzalska.github.io/goit-markup-hw-08/"
-                >Agencja</a
-              >
+              <a class="nav__link" href="./index.html">Agency</a>
             </li>
             <li class="nav__item nav__item--active">
-              <a
-                class="nav__link"
-                href="https://martadomzalska.github.io/goit-markup-hw-08/portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav__link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="Kontakty">Kontakty</a>
+              <a class="nav__link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -80,16 +79,16 @@
       <div class="container">
         <ul class="buttons">
           <li>
-            <button class="buttons__item">Wszystkie</button>
+            <button class="buttons__item">All</button>
           </li>
           <li>
-            <button class="buttons__item">Strony</button>
+            <button class="buttons__item">Websites</button>
           </li>
           <li>
-            <button class="buttons__item">Aplikacje</button>
+            <button class="buttons__item">Applications</button>
           </li>
           <li>
-            <button class="buttons__item">Dizajn</button>
+            <button class="buttons__item">Design</button>
           </li>
           <li>
             <button class="buttons__item">Marketing</button>
@@ -99,21 +98,26 @@
           <ul class="portfolio-list">
             <li class="portfolio-list__item">
               <picture>
-                <source srcset="./images/portfolio1-354.jpg 1x, ./images/portfolio1-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="./images/portfolio1-450.jpg"
-                srcset="./images/portfolio1-450@2x.jpg 2x"
-                alt="Technocrack"
-              />
-            </picture>
+                <source
+                  srcset="
+                    ./images/portfolio1-354.jpg    1x,
+                    ./images/portfolio1-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="./images/portfolio1-450.jpg"
+                  srcset="./images/portfolio1-450@2x.jpg 2x"
+                  alt="Technocrack"
+                />
+              </picture>
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <div class="portfolio-list__item-text">
@@ -124,25 +128,30 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio2-354.jpg 1x, images/portfolio2-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio2-450.jpg"
-                srcset="images/portfolio2-450@2x.jpg 2x"
-                alt="New Orlean vs Golden Star"
-              />
-            </picture>
+                <source
+                  srcset="
+                    images/portfolio2-354.jpg    1x,
+                    images/portfolio2-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio2-450.jpg"
+                  srcset="images/portfolio2-450@2x.jpg 2x"
+                  alt="New Orlean vs Golden Star"
+                />
+              </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">
-                  Grafika New Orlean vs Golden Star
+                  Graphic New Orlean vs Golden Star
                 </h4>
                 <p class="portfolio-list__paragraph">Dizajn</p>
               </div>
@@ -150,22 +159,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio3-354.jpg 1x, images/portfolio3-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio3-450.jpg"
-                srcset="images/portfolio3-450@2x.jpg 2x"
-                alt="Restaurant Seafood"
-               
-              />
+                <source
+                  srcset="
+                    images/portfolio3-354.jpg    1x,
+                    images/portfolio3-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio3-450.jpg"
+                  srcset="images/portfolio3-450@2x.jpg 2x"
+                  alt="Restaurant Seafood"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">Restauracja Seafood</h4>
@@ -175,22 +188,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio4-354.jpg 1x, images/portfolio4-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio4-450.jpg"
-                srcset="images/portfolio4-450@2x.jpg 2x"
-                alt="product prime"
-              
-              />
+                <source
+                  srcset="
+                    images/portfolio4-354.jpg    1x,
+                    images/portfolio4-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio4-450.jpg"
+                  srcset="images/portfolio4-450@2x.jpg 2x"
+                  alt="product prime"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">Projekt Prime</h4>
@@ -200,22 +217,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio5-354.jpg 1x, images/portfolio5-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio5-450.jpg"
-                srcset="images/portfolio5-450@2x.jpg 2x"
-                alt="project boxes"
-            
-              />
+                <source
+                  srcset="
+                    images/portfolio5-354.jpg    1x,
+                    images/portfolio5-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio5-450.jpg"
+                  srcset="images/portfolio5-450@2x.jpg 2x"
+                  alt="project boxes"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">Projekt Boxes</h4>
@@ -225,22 +246,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio6-354.jpg 1x, images/portfolio6-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio6-450.jpg"
-                srcset="images/portfolio6-450@2x.jpg 2x"
-                alt="inspiration has no borders"
-               
-              />
+                <source
+                  srcset="
+                    images/portfolio6-354.jpg    1x,
+                    images/portfolio6-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio6-450.jpg"
+                  srcset="images/portfolio6-450@2x.jpg 2x"
+                  alt="inspiration has no borders"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">
@@ -252,22 +277,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio7-354.jpg 1x, images/portfolio7-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio7-450.jpg"
-                srcset="images/portfolio7-450@2x.jpg 2x"
-                alt="magazine limited edition"
-            
-              />
+                <source
+                  srcset="
+                    images/portfolio7-354.jpg    1x,
+                    images/portfolio7-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio7-450.jpg"
+                  srcset="images/portfolio7-450@2x.jpg 2x"
+                  alt="magazine limited edition"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">
@@ -279,22 +308,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio8-354.jpg 1x, images/portfolio8-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio8-450.jpg"
-                srcset="images/portfolio8-450@2x.jpg 2x"
-                alt="project lab"
-             
-              />
+                <source
+                  srcset="
+                    images/portfolio8-354.jpg    1x,
+                    images/portfolio8-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio8-450.jpg"
+                  srcset="images/portfolio8-450@2x.jpg 2x"
+                  alt="project lab"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">Projekt LAB</h4>
@@ -304,22 +337,26 @@
             <li class="portfolio-list__item">
               <div class="overlay">
                 <p class="overlay__text">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
+                  Technocrack is a popular platform used for spreading malware.
+                  Companies use this platform for spying and attacks on
+                  competitors' unsecured servers.
                 </p>
               </div>
               <picture>
-                <source srcset="images/portfolio9-354.jpg 1x, images/portfolio9-354@2x.jpg 2x"
-                media="(min-width: 768px)" sizes="46vw" >
-              <img
-                class="portfolio-list__image"
-                src="images/portfolio9-450.jpg"
-                srcset="images/portfolio9-450@2x.jpg 2x"
-                alt="growing business"
-            
-              />
+                <source
+                  srcset="
+                    images/portfolio9-354.jpg    1x,
+                    images/portfolio9-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="46vw"
+                />
+                <img
+                  class="portfolio-list__image"
+                  src="images/portfolio9-450.jpg"
+                  srcset="images/portfolio9-450@2x.jpg 2x"
+                  alt="growing business"
+                />
               </picture>
               <div class="portfolio-list__item-text">
                 <h4 class="portfolio-list__headline">Growing Business</h4>
@@ -333,7 +370,7 @@
     <footer class="footer-background">
       <div class="container container--lists">
         <section class="logo-section">
-          <a href="https://webstudio.pl" class="logo"
+          <a href="./index.html" class="logo"
             >Web <span class="logo__footer-text">Studio</span></a
           >
           <div class="brand-info">
@@ -352,7 +389,7 @@
         </section>
 
         <section class="join-us">
-          <h3 class="join-us__headline">Dołącz do nas</h3>
+          <h3 class="join-us__headline">Join us</h3>
           <ul class="join-us__list">
             <li class="join-us__item">
               <svg class="join-us__icon" width="20" height="20">
@@ -378,7 +415,7 @@
         </section>
 
         <section class="newsletter">
-          <h3 class="newsletter__headline">Zapisz się do newslettera</h3>
+          <h3 class="newsletter__headline">Subscribe to the Newsletter</h3>
           <form
             class="newsletter__form"
             name="newsletter_form"
@@ -394,7 +431,7 @@
               />
             </label>
             <button class="newsletter__button" type="submit">
-              Zapisz się
+              Subscribe
               <svg class="newsletter__button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
@@ -402,43 +439,6 @@
           </form>
         </section>
       </div>
-      <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg width="18.67" height="18.67">
-          <use href="./images/close_24px.svg#icon/close_24px"></use>
-        </svg>
-      </button>
-      <ul class="menu-container__list">
-        <li class="menu-container__list-item"><a class="menu-container__link" href="https://martadomzalska.github.io/goit-markup-hw-08/">
-          Agencja</a>
-        </li>
-        <li class="menu-container__list-item"><a class="menu-container__link menu-container__link--active" href="https://martadomzalska.github.io/goit-markup-hw-08/portfolio.html">Portfolio</a></li>
-        <li class="menu-container__link">Kontakt</li>
-      </ul>
-      <section class="menu-container__contact">
-        <a href="tel:+48111111111" class="menu-container__contact-tel"
-          >+48 111 111 111</a
-        >
-        <a href="mailto:info@example.com" class="menu-container__contact-mail"
-          >info@example.com</a
-        >
-      </section>
-      <ul class="menu-container__socials">
-        <li class="menu-container__socials-item">
-          <a href="" class="menu-container__socials-link">Instagram</a>
-        </li>
-        <li class="menu-container__socials-item">
-          <a href="" class="menu-container__socials-link">Twitter</a>
-        </li>
-        <li class="menu-container__socials-item">
-          <a href="" class="menu-container__socials-link">Facebook</a>
-        </li>
-        <li class="menu-container__socials-item">
-          <a href="" class="menu-container__socials-link">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-    <script src="./js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>
