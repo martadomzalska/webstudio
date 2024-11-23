@@ -1,0 +1,42 @@
+$primaryFont: "Roboto";
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding-left: 0;
+  padding-top: 60px;
+  padding-right: 0;
+  padding-bottom: 40px;
+  
+  list-style: none;
+}
+.buttons__item {
+  height: 38px;
+  width: auto;
+  background: getColor("secondBackground");
+  border-radius: 4px;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  border: none;
+  color: getColor("primary");
+  margin-right: 8px;
+  margin-bottom: 15px;
+  padding: 6px 22px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: getColor("accent");
+    color: getColor("contrast");
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    justify-content: center;
+  }
+}

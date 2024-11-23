@@ -1,0 +1,51 @@
+$primaryFont: "Roboto";
+.work-headline {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: getColor("primary");
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.work-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 0;
+  margin:0;
+}
+.work-list__element {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  margin-bottom: 94px
+}
+.work-list__box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+.work-list__text {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: getColor("contrast");
+}
+
+@media screen and (max-width:1200px) {
+  .work-headline, .work-list {
+    display: none;
+  }
+}

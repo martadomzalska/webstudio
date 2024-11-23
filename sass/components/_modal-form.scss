@@ -1,0 +1,209 @@
+$primaryFont: "Roboto";
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: getColor("contrast");
+  width: 450px;
+  min-height: 609px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: getColor("contrast");
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.modal-form-section__headline {
+  font-family: $primaryFont;
+  font-style: normal;
+  width: 370px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.modal-form-section__input {
+  box-sizing: border-box;
+  width: 370px;
+  height: 40px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 30px;
+
+  &:focus-within {
+    border-color: getColor("accent");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+.modal-form-section__comments {
+  box-sizing: border-box;
+  width: 370px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus-within {
+    border-color: getColor("accent");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+.modal-form-section__label {
+  position: relative;
+}
+.modal-form-section__label-text {
+  position: absolute;
+  top: -24px;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: getColor("secondary");
+}
+.modal-form-section__label-comments {
+  position: absolute;
+  top: -140px;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: getColor("secondary");
+}
+.modal-form-section__icon {
+  position: absolute;
+  top: 4px;
+  left: 13px;
+}
+.policy {
+  margin-bottom: 30px;
+}
+.policy--hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.policy__text {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: getColor("secondary");
+
+  &::before {
+    display: inline-block;
+    box-sizing: border-box;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid getColor("primary");
+    margin-right: 9px;
+
+    .policy:checked + & {
+      background-color: getColor("accent");
+      border: none;
+      background-image: url(../images/Vector.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.policy__link {
+  color: getColor("accent");
+}
+.policy__button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  background: getColor("accent");
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: getColor("contrast");
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  min-height: 581px;
+  }
+  .modal-form-section__headline {
+    width: 448px;
+  height: 23px;
+  }
+  .modal-form-section__input {
+    width: 448px;
+  }
+  .modal-form-section__comments {
+    width: 448px;
+  }
+  .policy__text {
+    font-size: 14px;
+  line-height: 24px;
+  }
+}

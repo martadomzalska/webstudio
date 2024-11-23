@@ -1,0 +1,33 @@
+$primaryFont: "Roboto";
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+.brand-info__address {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: getColor("contrast");
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.brand-info__link {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}
+.brand-info__link--top {
+  margin-bottom: 9px;
+}

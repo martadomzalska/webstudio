@@ -1,0 +1,55 @@
+
+ .footer-background {
+  background-color: #2f303a;
+  position: relative;
+}
+.logo-section {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.logo__footer-text {
+  padding-top: 60px;
+  color: getColor("contrast");
+}
+
+@import "brand-info-sec";
+@import "join-us-sec";
+@import "newsletter";
+
+@media screen and (min-width:768px) {
+  .container--lists {
+    display: flex;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+   .container--lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-background {
+    padding-top: 60px;
+    padding-bottom:60px;
+  }
+  .logo-section {
+    padding: 0;
+    margin: 0;
+  }
+  .logo__footer-text {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px)  {
+  .container--lists {
+    gap: 70px;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+    .logo-section {
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+

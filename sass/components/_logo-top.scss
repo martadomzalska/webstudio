@@ -1,0 +1,25 @@
+$accentFont: "Raleway";
+
+.logo {
+  font-family: $accentFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: getColor("accent");
+  text-decoration: none;
+}
+.logo__header-text {
+  color: #000;
+}
+
+@media screen and (min-width:  1200px) {
+  .logo {
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo--top {
+  margin-right: 93px;
+}
+
+}

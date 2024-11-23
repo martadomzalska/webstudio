@@ -1,0 +1,31 @@
+@import "base";
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header {
+  border-bottom: 1px solid getColor("headlineBorder");
+}
+@import "logo-top";
+@import "header-nav";
+@import "menu-toggle";
+@import "contact-menu";
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  .container--header {
+    margin :0 15px;
+  }
+}
+@media screeen and (max-width: 1199px) {
+  .container--header {
+    gap: 83px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--header {
+    justify-content: none;
+  }
+}
